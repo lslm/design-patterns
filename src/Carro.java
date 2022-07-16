@@ -10,10 +10,6 @@ public class Carro {
         this.anoFabricacao = anoFabricacao;
     }
 
-    public void setNumeroPortas(int numeroPortas) {
-        this.numeroPortas = numeroPortas;
-    }
-
     public String getChassi() {
         return chassi;
     }
@@ -30,5 +26,9 @@ public class Carro {
 
     public void setCor(String cor) {
         this.cor = cor;
+    }
+
+    public int getNumeroPortas() {
+        return numeroPortas;
     }
 }
