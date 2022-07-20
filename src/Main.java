@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Carro c1 = new Carro(4, "034x034", "2022");
+        Carro c1 = new CarroBuilder()
+                .setChassi("Teste")
+                .setAnoFabricacao("2020")
+                .setCor("Vermelho")
+                .setNumeroPortas(4)
+                .build();
 
-        c1.getCor();
-        c1.getAnoFabricacao();
-        c1.getChassi();
-        c1.getNumeroPortas();
-
-        c1.setCor("Vermelho");
-        c1.getCor();
+        System.out.println(c1);
     }
 }

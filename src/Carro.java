@@ -4,21 +4,29 @@ public class Carro {
     private String anoFabricacao;
     private String cor;
 
-    public Carro(int numeroPortas, String chassi, String anoFabricacao) {
+    public int getNumeroPortas() {
+        return numeroPortas;
+    }
+
+    public void setNumeroPortas(int numeroPortas) {
         this.numeroPortas = numeroPortas;
-        this.chassi = chassi;
-        this.anoFabricacao = anoFabricacao;
     }
 
     public String getChassi() {
         return chassi;
     }
 
+    public void setChassi(String chassi) {
+        this.chassi = chassi;
+    }
 
     public String getAnoFabricacao() {
         return anoFabricacao;
     }
 
+    public void setAnoFabricacao(String anoFabricacao) {
+        this.anoFabricacao = anoFabricacao;
+    }
 
     public String getCor() {
         return cor;
@@ -28,7 +36,13 @@ public class Carro {
         this.cor = cor;
     }
 
-    public int getNumeroPortas() {
-        return numeroPortas;
+    @Override
+    public String toString() {
+        return "Carro{" +
+                "numeroPortas=" + numeroPortas +
+                ", chassi='" + chassi + '\'' +
+                ", anoFabricacao='" + anoFabricacao + '\'' +
+                ", cor='" + cor + '\'' +
+                '}';
     }
 }
